@@ -17,7 +17,6 @@ type Contacts struct {
 	Telegram string
 }
 
-
 func home(w http.ResponseWriter, r *http.Request) {
 	admin := User{"Boris Mukhin", 27, 15, []string{"Reading books", "Playing video games"}}
 	templ, _ := template.ParseFiles("templates/home.html")
